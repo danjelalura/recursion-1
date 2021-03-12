@@ -189,11 +189,7 @@
 (defn tails [coll]
   (if (empty? coll)
     '()
-    (cons coll (tails (rest coll)))
-
-
-    )
-  )
+    (cons coll (tails (rest coll)))))
 (tails [1 2 3 4])
 
 
@@ -282,26 +278,3 @@
 (seq-merge [4] [1 2 6 7])
 
 (seq-merge [1 5 7 9] [2 2 8 10])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
